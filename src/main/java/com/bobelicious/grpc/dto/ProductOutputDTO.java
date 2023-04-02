@@ -16,11 +16,11 @@ public class ProductOutputDTO {
         this.quantityInStock = quantityInStock;
     }
 
-    public ProductOutputDTO(Product product) {
-        this.id = product.getId();
-        this.name = product.getName();
-        this.price = product.getPrice();
-        this.quantityInStock = product.getQuantityInStock();
+    public ProductOutputDTO(Product x) {
+        this.id = x.getId();
+        this.name = x.getName();
+        this.price = x.getPrice();
+        this.quantityInStock = x.getQuantityInStock();
     }
 
 

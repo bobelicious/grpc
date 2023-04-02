@@ -78,28 +78,28 @@ public final class ProductServiceGrpc {
   }
 
   private static volatile io.grpc.MethodDescriptor<com.bobelicious.DeleteRequest,
-      com.bobelicious.ProductResponse> getDeleteMethod;
+      com.bobelicious.EmptyResponse> getDeleteMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "Delete",
       requestType = com.bobelicious.DeleteRequest.class,
-      responseType = com.bobelicious.ProductResponse.class,
+      responseType = com.bobelicious.EmptyResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
   public static io.grpc.MethodDescriptor<com.bobelicious.DeleteRequest,
-      com.bobelicious.ProductResponse> getDeleteMethod() {
-    io.grpc.MethodDescriptor<com.bobelicious.DeleteRequest, com.bobelicious.ProductResponse> getDeleteMethod;
+      com.bobelicious.EmptyResponse> getDeleteMethod() {
+    io.grpc.MethodDescriptor<com.bobelicious.DeleteRequest, com.bobelicious.EmptyResponse> getDeleteMethod;
     if ((getDeleteMethod = ProductServiceGrpc.getDeleteMethod) == null) {
       synchronized (ProductServiceGrpc.class) {
         if ((getDeleteMethod = ProductServiceGrpc.getDeleteMethod) == null) {
           ProductServiceGrpc.getDeleteMethod = getDeleteMethod =
-              io.grpc.MethodDescriptor.<com.bobelicious.DeleteRequest, com.bobelicious.ProductResponse>newBuilder()
+              io.grpc.MethodDescriptor.<com.bobelicious.DeleteRequest, com.bobelicious.EmptyResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "Delete"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
                   com.bobelicious.DeleteRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.bobelicious.ProductResponse.getDefaultInstance()))
+                  com.bobelicious.EmptyResponse.getDefaultInstance()))
               .setSchemaDescriptor(new ProductServiceMethodDescriptorSupplier("Delete"))
               .build();
         }
@@ -204,7 +204,7 @@ public final class ProductServiceGrpc {
     /**
      */
     public void delete(com.bobelicious.DeleteRequest request,
-        io.grpc.stub.StreamObserver<com.bobelicious.ProductResponse> responseObserver) {
+        io.grpc.stub.StreamObserver<com.bobelicious.EmptyResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getDeleteMethod(), responseObserver);
     }
 
@@ -236,7 +236,7 @@ public final class ProductServiceGrpc {
             io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
                 com.bobelicious.DeleteRequest,
-                com.bobelicious.ProductResponse>(
+                com.bobelicious.EmptyResponse>(
                   this, METHODID_DELETE)))
           .addMethod(
             getFindAllMethod(),
@@ -282,7 +282,7 @@ public final class ProductServiceGrpc {
     /**
      */
     public void delete(com.bobelicious.DeleteRequest request,
-        io.grpc.stub.StreamObserver<com.bobelicious.ProductResponse> responseObserver) {
+        io.grpc.stub.StreamObserver<com.bobelicious.EmptyResponse> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getDeleteMethod(), getCallOptions()), request, responseObserver);
     }
@@ -326,7 +326,7 @@ public final class ProductServiceGrpc {
 
     /**
      */
-    public com.bobelicious.ProductResponse delete(com.bobelicious.DeleteRequest request) {
+    public com.bobelicious.EmptyResponse delete(com.bobelicious.DeleteRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getDeleteMethod(), getCallOptions(), request);
     }
@@ -371,7 +371,7 @@ public final class ProductServiceGrpc {
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<com.bobelicious.ProductResponse> delete(
+    public com.google.common.util.concurrent.ListenableFuture<com.bobelicious.EmptyResponse> delete(
         com.bobelicious.DeleteRequest request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getDeleteMethod(), getCallOptions()), request);
@@ -418,7 +418,7 @@ public final class ProductServiceGrpc {
           break;
         case METHODID_DELETE:
           serviceImpl.delete((com.bobelicious.DeleteRequest) request,
-              (io.grpc.stub.StreamObserver<com.bobelicious.ProductResponse>) responseObserver);
+              (io.grpc.stub.StreamObserver<com.bobelicious.EmptyResponse>) responseObserver);
           break;
         case METHODID_FIND_ALL:
           serviceImpl.findAll((com.bobelicious.EmptyRequest) request,

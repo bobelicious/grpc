@@ -9,11 +9,13 @@ package com.bobelicious;
 service  ProductService {
     rpc Create(ProductRequest) returns (ProductResponse);
     rpc FindById(FindByIdRequest) returns (ProductResponse);
-    rpc Delete(DeleteRequest) returns (ProductResponse);
+    rpc Delete(DeleteRequest) returns (EmptyResponse);
     rpc FindAll(EmptyRequest) returns (ProductResponseList);
 }
 
 message EmptyRequest {}
+
+message EmptyResponse {}
 
 message ProductResponseList{
     repeated ProductResponse products = 1;

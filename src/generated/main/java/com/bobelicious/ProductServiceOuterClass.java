@@ -20,6 +20,11 @@ public final class ProductServiceOuterClass {
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_com_bobelicious_EmptyRequest_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_com_bobelicious_EmptyResponse_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_com_bobelicious_EmptyResponse_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
     internal_static_com_bobelicious_ProductResponseList_descriptor;
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
@@ -54,23 +59,24 @@ public final class ProductServiceOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\025product-service.proto\022\017com.bobelicious" +
-      "\"\016\n\014EmptyRequest\"I\n\023ProductResponseList\022" +
-      "2\n\010products\030\001 \003(\0132 .com.bobelicious.Prod" +
-      "uctResponse\"\035\n\017FindByIdRequest\022\n\n\002id\030\001 \001" +
-      "(\003\"H\n\016ProductRequest\022\014\n\004name\030\001 \001(\t\022\r\n\005pr" +
-      "ice\030\002 \001(\001\022\031\n\021quantity_in_stock\030\003 \001(\005\"U\n\017" +
-      "ProductResponse\022\n\n\002id\030\001 \001(\003\022\014\n\004name\030\002 \001(" +
-      "\t\022\r\n\005price\030\003 \001(\001\022\031\n\021quantity_in_stock\030\004 " +
-      "\001(\005\"\033\n\rDeleteRequest\022\n\n\002id\030\001 \001(\0032\311\002\n\016Pro" +
-      "ductService\022K\n\006Create\022\037.com.bobelicious." +
-      "ProductRequest\032 .com.bobelicious.Product" +
-      "Response\022N\n\010FindById\022 .com.bobelicious.F" +
-      "indByIdRequest\032 .com.bobelicious.Product" +
-      "Response\022J\n\006Delete\022\036.com.bobelicious.Del" +
-      "eteRequest\032 .com.bobelicious.ProductResp" +
-      "onse\022N\n\007FindAll\022\035.com.bobelicious.EmptyR" +
-      "equest\032$.com.bobelicious.ProductResponse" +
-      "ListB\023\n\017com.bobeliciousP\001b\006proto3"
+      "\"\016\n\014EmptyRequest\"\017\n\rEmptyResponse\"I\n\023Pro" +
+      "ductResponseList\0222\n\010products\030\001 \003(\0132 .com" +
+      ".bobelicious.ProductResponse\"\035\n\017FindById" +
+      "Request\022\n\n\002id\030\001 \001(\003\"H\n\016ProductRequest\022\014\n" +
+      "\004name\030\001 \001(\t\022\r\n\005price\030\002 \001(\001\022\031\n\021quantity_i" +
+      "n_stock\030\003 \001(\005\"U\n\017ProductResponse\022\n\n\002id\030\001" +
+      " \001(\003\022\014\n\004name\030\002 \001(\t\022\r\n\005price\030\003 \001(\001\022\031\n\021qua" +
+      "ntity_in_stock\030\004 \001(\005\"\033\n\rDeleteRequest\022\n\n" +
+      "\002id\030\001 \001(\0032\307\002\n\016ProductService\022K\n\006Create\022\037" +
+      ".com.bobelicious.ProductRequest\032 .com.bo" +
+      "belicious.ProductResponse\022N\n\010FindById\022 ." +
+      "com.bobelicious.FindByIdRequest\032 .com.bo" +
+      "belicious.ProductResponse\022H\n\006Delete\022\036.co" +
+      "m.bobelicious.DeleteRequest\032\036.com.bobeli" +
+      "cious.EmptyResponse\022N\n\007FindAll\022\035.com.bob" +
+      "elicious.EmptyRequest\032$.com.bobelicious." +
+      "ProductResponseListB\023\n\017com.bobeliciousP\001" +
+      "b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -82,32 +88,38 @@ public final class ProductServiceOuterClass {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_com_bobelicious_EmptyRequest_descriptor,
         new java.lang.String[] { });
-    internal_static_com_bobelicious_ProductResponseList_descriptor =
+    internal_static_com_bobelicious_EmptyResponse_descriptor =
       getDescriptor().getMessageTypes().get(1);
+    internal_static_com_bobelicious_EmptyResponse_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_com_bobelicious_EmptyResponse_descriptor,
+        new java.lang.String[] { });
+    internal_static_com_bobelicious_ProductResponseList_descriptor =
+      getDescriptor().getMessageTypes().get(2);
     internal_static_com_bobelicious_ProductResponseList_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_com_bobelicious_ProductResponseList_descriptor,
         new java.lang.String[] { "Products", });
     internal_static_com_bobelicious_FindByIdRequest_descriptor =
-      getDescriptor().getMessageTypes().get(2);
+      getDescriptor().getMessageTypes().get(3);
     internal_static_com_bobelicious_FindByIdRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_com_bobelicious_FindByIdRequest_descriptor,
         new java.lang.String[] { "Id", });
     internal_static_com_bobelicious_ProductRequest_descriptor =
-      getDescriptor().getMessageTypes().get(3);
+      getDescriptor().getMessageTypes().get(4);
     internal_static_com_bobelicious_ProductRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_com_bobelicious_ProductRequest_descriptor,
         new java.lang.String[] { "Name", "Price", "QuantityInStock", });
     internal_static_com_bobelicious_ProductResponse_descriptor =
-      getDescriptor().getMessageTypes().get(4);
+      getDescriptor().getMessageTypes().get(5);
     internal_static_com_bobelicious_ProductResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_com_bobelicious_ProductResponse_descriptor,
         new java.lang.String[] { "Id", "Name", "Price", "QuantityInStock", });
     internal_static_com_bobelicious_DeleteRequest_descriptor =
-      getDescriptor().getMessageTypes().get(5);
+      getDescriptor().getMessageTypes().get(6);
     internal_static_com_bobelicious_DeleteRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_com_bobelicious_DeleteRequest_descriptor,
