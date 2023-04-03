@@ -1,6 +1,7 @@
 package com.bobelicious.grpc.service;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -40,7 +41,7 @@ public class ProductServiceImpl implements IProductService {
     @Override
     public List<ProductOutputDTO> findAll() {
         var products = productRepository.findAll();
-        return products.stream().map( x-> new ProductOutputDTO(x)).toList(); 
+        return products.stream().map( x-> new ProductOutputDTO(x)).collect(Collectors.toList());
     }
 
     private void checkDuplicity(String name) {

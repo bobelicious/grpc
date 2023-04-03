@@ -1,5 +1,7 @@
 package com.bobelicious.grpc.controler;
 
+import java.util.stream.Collectors;
+
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.bobelicious.DeleteRequest;
@@ -73,7 +75,7 @@ public class ProductResource extends ProductServiceImplBase {
                 .setPrice(product.getPrice())
                 .setQuantityInStock(product.getQuantityInStock())
                 .build()
-        ).toList();
+        ).collect(Collectors.toList());
 
         var productResponse = ProductResponseList.newBuilder().addAllProducts(response).build();
         responseObserver.onNext(productResponse);
